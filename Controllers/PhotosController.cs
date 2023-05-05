@@ -37,7 +37,7 @@ namespace CityGuideAPIV1.Controllers
         }
 
         [HttpPost]
-        public ActionResult AddPhotoForCity(int cityId, [FromBody]PhotoForCreationDto photoForCreationDto)
+        public ActionResult AddPhotoForCity(int cityId, [FromForm]PhotoForCreationDto photoForCreationDto)
         {
             var city = _appRepository.GetCityById(cityId);
             if (city == null)

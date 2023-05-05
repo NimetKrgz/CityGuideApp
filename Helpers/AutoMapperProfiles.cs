@@ -12,7 +12,7 @@ namespace CityGuideAPIV1.Helpers
                 .ForMember(dest=> dest.PhotoUrl, opt=> { opt.MapFrom(src => src.Photos.FirstOrDefault(p => p.IsMain).Url); });
 
             CreateMap<City, CityForDetailDto>();
-            CreateMap<Photo, PhotoForCreationDto>();
+            CreateMap<PhotoForCreationDto, Photo>();
             CreateMap<PhotoForCreationDto, Photo>();
         }
     }
