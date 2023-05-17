@@ -13,7 +13,7 @@ namespace CityGuideAPIV1.Helpers
 
             CreateMap<City, CityForDetailDto>();
             CreateMap<PhotoForCreationDto, Photo>();
-            CreateMap<PhotoForCreationDto, Photo>();
+            CreateMap<Photo, PhotoForReturnDto>();
         }
     }
 }
